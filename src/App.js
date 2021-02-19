@@ -11,8 +11,16 @@ function App() {
 
   const handleAuth = user => {
     console.log('Handling Auth.......');
-    setCurrentUser(user);
-    setIsAuthenticated(true);
+    if (user) {
+      // sick add use stuff
+      setCurrentUser(user);
+      setIsAuthenticated(true);
+    } else {
+      // clear it all out
+      setCurrentUser(null);
+      setIsAuthenticated(false);
+      localStorage.removeItem('jwtToken');
+    }
   }
 
   return (
