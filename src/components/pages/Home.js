@@ -1,8 +1,8 @@
 const Home = (props) => {
     return (
-        <dvi>
+        <div>
             <h1>Home</h1>
-        </dvi>
+        </div>
     );
 }
 
