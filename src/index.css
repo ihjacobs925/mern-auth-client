@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #030327;
+  padding: .25em;
+  font-weight: 700;
+}
+
+.nav-link:hover {
+  color: rgb(71, 77, 79);
+  border-bottom: 1px solid #030327;
+  cursor: pointer;
+}
+
+.auth-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

@@ -1,5 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import { Redirect } from 'react-router-dom';
+
 
 const Profile = (props) => {
     const [message, setMessage] = useState('Loading msg...');
@@ -15,6 +17,7 @@ const Profile = (props) => {
         })
     }, []);
 
+    if (!props.currentUser) return <Redirect to='/auth' />
     return (
         <div>
             <h1>PROFILE PAGE</h1>
